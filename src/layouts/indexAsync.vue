@@ -11,14 +11,14 @@
   <ThemeDrawer />
 </template>
 
-<script setup lang="ts" name="layoutAsync">
-import { computed, defineAsyncComponent, type Component } from "vue";
+<script setup name="layoutAsync">
+import { computed, defineAsyncComponent } from "vue";
 import { LayoutType } from "@/stores/interface";
 import { useGlobalStore } from "@/stores/modules/global";
 import Loading from "@/components/Loading/index.vue";
 import ThemeDrawer from "./components/ThemeDrawer/index.vue";
 
-const LayoutComponents: Record<LayoutType, Component> = {
+const LayoutComponents= {
   vertical: defineAsyncComponent(() => import("./LayoutVertical/index.vue")),
   classic: defineAsyncComponent(() => import("./LayoutClassic/index.vue")),
   transverse: defineAsyncComponent(() => import("./LayoutTransverse/index.vue")),

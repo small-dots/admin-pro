@@ -36,7 +36,7 @@
   </el-container>
 </template>
 
-<script setup lang="ts" name="layoutClassic">
+<script setup name="layoutClassic">
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { useAuthStore } from "@/stores/modules/auth";
@@ -47,14 +47,13 @@ import ToolBarLeft from "@/layouts/components/Header/ToolBarLeft.vue";
 import ToolBarRight from "@/layouts/components/Header/ToolBarRight.vue";
 
 const title = import.meta.env.VITE_GLOB_APP_TITLE;
-
 const route = useRoute();
 const authStore = useAuthStore();
 const globalStore = useGlobalStore();
 const accordion = computed(() => globalStore.accordion);
 const isCollapse = computed(() => globalStore.isCollapse);
 const menuList = computed(() => authStore.showMenuListGet);
-const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path) as string);
+const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path));
 </script>
 
 <style scoped lang="scss">

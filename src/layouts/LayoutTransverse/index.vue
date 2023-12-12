@@ -34,7 +34,7 @@
   </el-container>
 </template>
 
-<script setup lang="ts" name="layoutTransverse">
+<script setup name="layoutTransverse">
 import { computed } from "vue";
 import { useAuthStore } from "@/stores/modules/auth";
 import { useRoute, useRouter } from "vue-router";
@@ -48,9 +48,9 @@ const route = useRoute();
 const router = useRouter();
 const authStore = useAuthStore();
 const menuList = computed(() => authStore.showMenuListGet);
-const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path) as string);
+const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path));
 
-const handleClickMenu = (subItem: Menu.MenuOptions) => {
+const handleClickMenu = subItem => {
   if (subItem.meta.isLink) return window.open(subItem.meta.isLink, "_blank");
   router.push(subItem.path);
 };

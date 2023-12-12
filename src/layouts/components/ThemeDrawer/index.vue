@@ -86,10 +86,6 @@
       <span>灰色模式</span>
       <el-switch v-model="isGrey" @change="changeGreyOrWeak('grey', !!$event)" />
     </div>
-    <div class="theme-item mb40">
-      <span>色弱模式</span>
-      <el-switch v-model="isWeak" @change="changeGreyOrWeak('weak', !!$event)" />
-    </div>
 
     <!-- 界面设置 -->
     <el-divider class="divider" content-position="center">
@@ -127,12 +123,11 @@
   </el-drawer>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
 import { useTheme } from "@/hooks/useTheme";
 import { useGlobalStore } from "@/stores/modules/global";
-import { LayoutType } from "@/stores/interface";
 import { DEFAULT_PRIMARY } from "@/config";
 import mittBus from "@/utils/mittBus";
 import SwitchDark from "@/components/SwitchDark/index.vue";
@@ -144,7 +139,6 @@ const {
   layout,
   primary,
   isGrey,
-  isWeak,
   asideInverted,
   headerInverted,
   isCollapse,
@@ -171,7 +165,7 @@ const colorList = [
 ];
 
 // 设置布局方式
-const setLayout = (val: LayoutType) => {
+const setLayout = val => {
   globalStore.setGlobalState("layout", val);
   setAsideTheme();
 };

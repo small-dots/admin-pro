@@ -47,14 +47,6 @@ const driverObj = driver({
       }
     },
     {
-      element: "#language",
-      popover: {
-        title: "Switch Language",
-        description: "Switch the system language",
-        side: "left"
-      }
-    },
-    {
       element: "#searchMenu",
       popover: {
         title: "Page Search",
