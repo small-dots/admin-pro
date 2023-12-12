@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider :size="assemblySize" :button="buttonConfig">
+  <el-config-provider :locale="locale" :size="assemblySize" :button="buttonConfig">
     <router-view></router-view>
   </el-config-provider>
 </template>
@@ -9,10 +9,10 @@ import { reactive, computed } from "vue";
 import { useTheme } from "@/hooks/useTheme";
 import { ElConfigProvider } from "element-plus";
 import { useGlobalStore } from "@/stores/modules/global";
+import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 
 const globalStore = useGlobalStore();
-
-// init theme
+const locale = zhCn;
 const { initTheme } = useTheme();
 initTheme();
 
