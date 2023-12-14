@@ -1,4 +1,4 @@
-import { isArray } from "@/utils/is";
+import { isArray } from "./is";
 
 const mode = import.meta.env.VITE_ROUTER_MODE;
 

@@ -11,7 +11,7 @@ export const useTime = () => {
   const hour = ref(0); // 小时
   const minute = ref(0); // 分钟
   const second = ref(0); // 秒
-  const nowTime = ref < string > (""); // 当前时间
+  const nowTime = ref(""); // 当前时间
 
   // 更新时间
   const updateTime = () => {

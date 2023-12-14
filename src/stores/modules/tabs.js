@@ -1,6 +1,6 @@
 import router from "@/routers";
 import { defineStore } from "pinia";
-import { getUrlWithParams } from "@/utils";
+import { getUrlWithParams } from "@sbh/utils";
 import { useKeepAliveStore } from "./keepAlive";
 import piniaPersistConfig from "@/stores/helper/persist";
 

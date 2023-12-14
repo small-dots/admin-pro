@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import mittBus from "@/utils/mittBus";
+import mittBus from "@sbh/utils/mittBus";
 const openDrawer = () => {
   mittBus.emit("openThemeDrawer");
 };

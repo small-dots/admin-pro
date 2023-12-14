@@ -1,0 +1,17 @@
+{
+  "name": "@sbh/utils",
+  "version": "1.0.0",
+  "description": "全局utils",
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "SBHFN",
+  "license": "ISC"
+}

@@ -6,7 +6,7 @@
 
 <script setup>
 import { reactive, computed } from "vue";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@sbh/hooks";
 import { ElConfigProvider } from "element-plus";
 import { useGlobalStore } from "@/stores/modules/global";
 import zhCn from "element-plus/dist/locale/zh-cn.mjs";

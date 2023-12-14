@@ -23,13 +23,15 @@ import ElementPlus from "element-plus";
 // element icons
 import * as Icons from "@element-plus/icons-vue";
 // custom directives
-import directives from "@/directives/index";
+import directives from "@sbh/directives/index";
 // vue Router
 import router from "@/routers";
 // pinia store
 import pinia from "@/stores";
 // errorHandler
-import errorHandler from "@/utils/errorHandler";
+import errorHandler from "@sbh/utils/errorHandler";
+
+import proComponent from "@/components";
 
 const app = createApp(App);
 
@@ -40,4 +42,4 @@ Object.keys(Icons).forEach(key => {
   app.component(key, Icons[key]);
 });
 
-app.use(ElementPlus).use(directives).use(router).use(pinia).mount("#app");
+app.use(ElementPlus).use(proComponent).use(directives).use(router).use(pinia).mount("#app");

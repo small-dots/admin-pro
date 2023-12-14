@@ -38,8 +38,8 @@
 <script setup lang="tsx" name="treeProTable">
 import { onMounted, reactive, ref } from "vue";
 import { User } from "@/api/interface";
-import { genderType } from "@/utils/dict";
-import { useHandleData } from "@/hooks/useHandleData";
+import { genderType } from "@sbh/utils/dict";
+import { useHandleData } from "@sbh/hooks";
 import { ElMessage, ElNotification } from "element-plus";
 import ProTable from "@/components/ProTable/index.vue";
 import TreeFilter from "@/components/TreeFilter/index.vue";

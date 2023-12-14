@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { getAuthButtonListApi, getAuthMenuListApi } from "@/api/modules/login";
-import { getFlatMenuList, getShowMenuList, getAllBreadcrumbList } from "@/utils";
+import { getFlatMenuList, getShowMenuList, getAllBreadcrumbList } from "@sbh/utils";
 
 export const useAuthStore = defineStore({
   id: "geeker-auth",

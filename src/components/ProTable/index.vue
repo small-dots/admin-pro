@@ -102,13 +102,13 @@
 <script setup lang="ts" name="ProTable">
 import { ref, watch, provide, onMounted, unref, computed, reactive } from "vue";
 import { ElTable } from "element-plus";
-import { useTable } from "@/hooks/useTable";
-import { useSelection } from "@/hooks/useSelection";
-import { BreakPoint } from "@/components/Grid/interface";
-import { ColumnProps, TypeProps } from "@/components/ProTable/interface";
+import { useTable } from "@sbh/hooks";
+import { useSelection } from "@sbh/hooks";
+import { BreakPoint } from "./interface";
+import { ColumnProps, TypeProps } from "./interface";
 import { Refresh, Operation, Search } from "@element-plus/icons-vue";
-import { handleProp } from "@/utils";
-import SearchForm from "@/components/SearchForm/index.vue";
+import { handleProp } from "@sbh/utils";
+import SearchForm from "../SearchForm/index.vue";
 import Pagination from "./components/Pagination.vue";
 import ColSetting from "./components/ColSetting.vue";
 import TableColumn from "./components/TableColumn.vue";

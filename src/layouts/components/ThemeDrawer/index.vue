@@ -126,10 +126,10 @@
 <script setup>
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@sbh/hooks";
 import { useGlobalStore } from "@/stores/modules/global";
 import { DEFAULT_PRIMARY } from "@/config";
-import mittBus from "@/utils/mittBus";
+import mittBus from "@sbh/utils/mittBus";
 import SwitchDark from "@/components/SwitchDark/index.vue";
 
 const { changePrimary, changeGreyOrWeak, setAsideTheme, setHeaderTheme } = useTheme();

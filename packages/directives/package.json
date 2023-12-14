@@ -1,0 +1,17 @@
+{
+  "name": "@sbh/directives",
+  "version": "1.0.0",
+  "description": "全局directives",
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "keywords": [
+    "directives"
+  ],
+  "author": "SBHFN",
+  "license": "ISC"
+}

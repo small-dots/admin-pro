@@ -9,7 +9,7 @@
 import dayjs from "dayjs";
 import ECharts from "@/components/ECharts/index.vue";
 import { ECOption } from "@/components/ECharts/config";
-import { randomNum } from "@/utils";
+import { randomNum } from "@sbh/utils";
 
 const initDate = (): string[] => {
   const dateList: string[] = [];

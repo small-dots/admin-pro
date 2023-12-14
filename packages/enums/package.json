@@ -1,0 +1,17 @@
+{
+  "name": "@sbh/enums",
+  "version": "1.0.0",
+  "description": "定义全部的请求状态码以及其他请求公共配置信息",
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "keywords": [
+    "enums"
+  ],
+  "author": "SBHFN",
+  "license": "ISC"
+}
