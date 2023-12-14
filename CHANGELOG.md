@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.4.0 (2023-12-14)
+
+
+### Features
+
+* **config:** 🚀 考虑使用monorepo方式管理仓库 ([a501492](https://github.com/small-dots/admin-pro/commit/a501492a958c04233b4e9a41efb1c655c3d92ec4))
+* **config:** 🚀 修改pakcage系统名称 ([996c710](https://github.com/small-dots/admin-pro/commit/996c7108502d54ae42cd304d76420d684a8f054c))
+
 ## [1.2.0](https://github.com/HalseySpicy/Geeker-Admin/compare/v1.1.0...v1.2.0) (2023-09-15)
 
 
