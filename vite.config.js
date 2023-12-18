@@ -22,8 +22,7 @@ export default defineConfig(({ mode }) => {
     root,
     resolve: {
       alias: {
-        "@": resolve(__dirname, "./src"),
-        "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js"
+        "@": resolve(__dirname, "./src")
       }
     },
     define: {
@@ -34,7 +33,7 @@ export default defineConfig(({ mode }) => {
         scss: {
           additionalData: `@import "@/styles/var.scss";`
         }
-      }
+      },
     },
     server: {
       host: "0.0.0.0",

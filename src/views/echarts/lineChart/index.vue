@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts" name="lineChart">
-import { ECOption } from "@sbh/components/ECharts/config";
+import { ECOption } from "@/components/ECharts/config";
 
 const option: ECOption = {
   title: {

@@ -30,7 +30,7 @@ import router from "@/routers";
 import pinia from "@/stores";
 // errorHandler
 import errorHandler from "@sbh/utils/errorHandler";
-
+import "amfe-flexible";
 import proComponent from "@/components";
 
 const app = createApp(App);

@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts" name="pieChart">
-import { ECOption } from "@sbh/components/ECharts/config";
+import { ECOption } from "@/components/ECharts/config";
 
 const option: ECOption = {
   tooltip: {

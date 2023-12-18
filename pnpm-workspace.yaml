@@ -1,4 +1,3 @@
 packages:
 # 全部包 在packages/下的全部子目录
 - packages/*
-- apps/*
